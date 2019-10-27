@@ -1,0 +1,31 @@
+{
+    "extends": "tslint-react",
+    "rules": {
+        "jsx-no-multiline-js": false,
+        "jsx-no-lambda": false,
+        "only-arrow-functions": [
+            true,
+            "allow-declarations",
+            "allow-named-functions"
+        ], // 必须使用箭头函数，除非是单独的函数声明或是命名函数
+        "arrow-parens": true, //箭头函数定义的参数需要括号
+        "indent": [
+            true,
+            "spaces"
+        ], // 缩进2个空格
+        "quotemark": [
+            true,
+            "double",
+            "jsx-double"
+        ], // 强制用 ""
+        "triple-equals": [
+            true,
+            "allow-null-check"
+        ], // 强制用 === 替换 ==
+        "no-var-requires": true, // 不许使用 var 声明变量
+        "no-console": true, // 不许使用 console
+        "variable-name": [
+            true
+        ] // 小驼峰命名法
+    }
+}

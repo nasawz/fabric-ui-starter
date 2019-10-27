@@ -17,9 +17,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "preserve",
+    "noImplicitAny": false,
+    "noImplicitThis": false
   },
   "include": [
     "src"
-  ]
+  ],
+  "extends": "./tsconfig.paths.json"
 }

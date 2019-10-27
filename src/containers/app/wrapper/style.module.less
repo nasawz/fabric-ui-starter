@@ -1,0 +1,183 @@
+.dd {
+  height: calc(100% - 4.8rem);
+  .page-content-wrapper {
+    background: #f3f2f1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .flex-fill {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      min-height: 0;
+      min-width: 0;
+    }
+    .messages-header {
+      flex: none;
+      padding: 0;
+      white-space: nowrap;      
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      padding: 0 3.2rem .1rem;
+      position: relative;     
+      margin-bottom: 2rem; 
+    }
+    .section-divider:before {
+      left: 3.2rem;
+      right: 3.2rem;
+      pointer-events: none;
+      content: "";
+      height: .2rem;
+      position: absolute;
+      z-index: 1;
+      bottom: -.2rem;
+      background: rgba(37,36,35,.05);      
+    }
+    .title-bar {
+      height: 4.1rem;
+      padding: 1.5rem 1.6rem 0 0;      
+
+      .information {
+        display: flex;
+        white-space: nowrap;    
+        .text-info {
+          display: flex;
+          max-width: 100%;
+          overflow: hidden;
+
+          .title-bar-icon {
+            display: inline-block;
+            width: 3.2rem;
+            height: 3.2rem;
+            vertical-align: top;
+            margin: .1rem 1.5rem 0 0;
+            flex-shrink: 0;  
+            
+            .icon {
+              background: #fff;
+              border-radius: .3rem;
+              height: 3.2rem;
+              width: 3.2rem;
+            }
+          }
+          h2 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-weight: 600;
+            color: inherit;
+            display: inline-block;
+            line-height: 1.35;
+            margin: -.1rem 0 0;
+            user-select: text;
+            vertical-align: top;          
+          }
+        } 
+      }
+    }
+      
+    .tab-bar-wrapper {
+        display: flex;
+        margin-top: 1rem;
+        height: 2.9rem;   
+        
+        .tabs {
+          position: relative;
+          outline-offset: -1px;
+          display: flex;
+          flex: 0 1 auto;
+          margin: 0 0 0 -.5rem;
+          overflow: hidden;
+          padding: 0;
+
+          li {
+            display: inline-block;
+            min-width: .2rem;
+            min-height: 1.8rem;
+            position: relative;
+            outline-offset: -1px;
+            flex-shrink: 0;
+            margin-right: .5rem;
+            padding: 0 .5rem;     
+            
+            .btn-item {
+              position: relative;
+              display: inline-block;
+              vertical-align: middle;
+
+              .btn {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                border: 0;
+                border-radius: 0;
+                max-width: 20rem;
+                position: relative;
+                cursor: pointer;
+
+                background-color: transparent;
+                margin-bottom: 0;
+                font-weight: 400;
+                text-align: center;
+                touch-action: manipulation;
+                font-size: 14px;
+                line-height: 1.4286;
+
+                background-image: none;
+                vertical-align: middle;
+                text-decoration: none;   
+                color: #6264a7;        
+                border-bottom: solid .4rem transparent;
+                padding: .45rem 0 0;
+                display: inline-block;
+                height: 2rem;            
+                .tab-btn-container {
+                  display: flex;                  
+                  .tab-display-name {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                  }
+                }
+              }
+
+              .btn:hover {
+                box-shadow: none;
+                outline: 0;
+                border-bottom-color: rgba(98,100,167,.6);
+              }
+
+              .btn-select {
+                cursor: default;
+                user-select: none;
+                border-bottom-color: #6264a7;
+              }
+              .btn-select:hover {
+                border-bottom-color: #6264a7;
+              }
+              
+              .btn:first-child {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+    }
+
+    .base-tab {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      margin: 0 3.2rem;
+      overflow: hidden;
+    }
+    .subCont {
+      max-width: 888px;
+      margin: auto;
+      min-width: 571px;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
